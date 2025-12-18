@@ -18,6 +18,7 @@
     --c-main-accent-light: #8917e7;
     --c-main-bg-tr-50: rgba(244, 244, 249, 0.5);
     --c-text-light: #ffffff;
+    --c-text-alert: rgb(255, 0, 0);
 }
 
 a {
@@ -127,8 +128,13 @@ body {
 }
 .product-card__status {
     font-size: 1.4rem;
-    color: var(--c-text-accent);
 } 
+.product-card__status--available {
+    color: var(--c-text-accent);
+}
+.product-card__status--out {
+    color: var(--c-text-alert);
+}
 .product-card__price-info {
 } 
 .price-info {
